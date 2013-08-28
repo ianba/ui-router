@@ -91,6 +91,347 @@
         <dl>
             
 <dt>
+    <h4 class="name" id="ancestors"><span class="type-signature"></span>ancestors<span class="signature">(first, second)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Finds the common ancestor path between two states.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>first</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The first state.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>second</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The second state.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        common.js, line 45
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Returns an array of state names in descending order, not including the root.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Array</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="inheritParams"><span class="type-signature"></span>inheritParams<span class="signature">(currentParams, newParams, $current, $to)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Merges a set of parameters with all parameters inherited between the common parents of the
+current state and a given destination state.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>currentParams</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The value of the current state parameters ($stateParams).</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>newParams</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The set of parameters which will be composited with inherited params.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>$current</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Internal definition of object representing the current state.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>$to</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Internal definition of object representing state to transition to.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        common.js, line 65
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
     <h4 class="name" id="merge"><span class="type-signature"></span>merge<span class="signature">(dst, src)</span><span class="type-signature"></span></h4>
     
     
@@ -249,13 +590,13 @@ to <code>dst</code> if the <code>dst</code> object has no own property of the sa
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="$templateFactory.html">$templateFactory</a></li><li><a href="$urlMatcherFactory.html">$urlMatcherFactory</a></li><li><a href="UrlMatcher.html">UrlMatcher</a></li></ul><h3>Global</h3><ul><li><a href="global.html#merge">merge</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="$templateFactory.html">$templateFactory</a></li><li><a href="$urlMatcherFactory.html">$urlMatcherFactory</a></li><li><a href="UrlMatcher.html">UrlMatcher</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ancestors">ancestors</a></li><li><a href="global.html#inheritParams">inheritParams</a></li><li><a href="global.html#merge">merge</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.1.0</a> on Sat May 25 2013 02:37:53 GMT+1200 (NZST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.1.1</a> on Wed Aug 28 2013 13:28:35 GMT-0700 (PDT)
 </footer>
 
 <script> prettyPrint(); </script>
